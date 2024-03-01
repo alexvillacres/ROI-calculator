@@ -2,7 +2,6 @@ import './styles/calculator.css';
 
 import {
   decrementButton,
-  formContainer,
   incrementButton,
   nextButton,
   prevButton,

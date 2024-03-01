@@ -79,10 +79,3 @@
         transform: translateY(0);
     }
 }
-
-.error-message {
-    color: rgb(240, 122, 122);
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-    padding: 1rem;
-}

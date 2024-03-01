@@ -1,5 +1,5 @@
 import { calculateMoneySaved } from './calculator';
-import { formContainer, moneySavedInput } from './domElements';
+import { formContainer } from './domElements';
 import { toggleElementsVisibility, updateCalculatorState, updateResults } from './uiManipulation';
 
 const averageAnnualSalary = 137000;
@@ -17,12 +17,11 @@ export function handleNextButtonClick(event: Event): void {
   }
 
   moneySaved = calculateMoneySaved(averageAnnualSalary, numberOfEmployees, timeSavedPercentage);
-  console.log(moneySaved, moneySavedInput);
   updateResults(moneySaved, 'money-saved');
   updateCalculatorState('middle');
 }
 
-export function handlePreviousButtonClick(event: Event): void {
+export function handlePreviousButtonClick(): void {
   updateCalculatorState('start');
 }
 
